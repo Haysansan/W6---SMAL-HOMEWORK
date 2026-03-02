@@ -16,7 +16,6 @@ class AppSettingsState extends ChangeNotifier {
     notifyListeners();
   }
 
-  // Might be used to load data from repository
   ThemeColor get theme => _appSettings?.themeColor ?? ThemeColor.blue;
 
   Future<void> changeTheme(ThemeColor themeColor) async {
